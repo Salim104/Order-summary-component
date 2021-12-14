@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: container;
+  background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.tex-content {
+  text-align: center;
+  padding: 7px;
+}
+
+.title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.tex-content .subtitle {
+  color: rgba(133, 127, 127, 0.699);
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+.plain-box {
+  background: hsl(224, 81%, 86%);
+  border-radius: 12px;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.plain-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-plan {
+  margin-left: 20px;
+}
+.price-plan h5 {
+  font-size: 16px;
+  font-weight: 900;
+}
+.price-plan p {
+  color: rgba(110, 106, 106, 0.699);
+}
+.plain-box a {
+  position: relative;
+  top: 10px;
+  font-weight: 900;
+}
+.plain-box a:hover {
+  text-decoration: none;
+  color: rgba(110, 106, 106, 0.699);
+}
+.last-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.last-content .btn-submit {
+  margin-bottom: 10px;
+  background-color: hsl(224, 86%, 42%);
+  border-radius: 10px;
+  padding: 10px;
+}
+.last-content a {
+  text-decoration: none;
+}
+
+.last-content :first-child {
+  margin-bottom: 20px;
+  padding: 20px 0;
+  color: #fff;
+}
+.last-content .btn-submit:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.last-content :nth-last-child(1) {
+  margin-bottom: 20px;
+  color: rgba(110, 106, 106, 0.699);
+}
+
+.last-content :nth-last-child(1):hover {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+@media (max-width: 425px) {
+  .container {
+    max-width: 85%;
+  }
+}
